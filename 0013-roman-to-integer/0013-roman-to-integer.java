@@ -9,14 +9,17 @@ class Solution
             char current_char = s.charAt(i);
             int current_val =romantodecimal(current_char);
             
+            // If the current value is less than the previous value, subtract it
             if(current_val<prev_val)
             {
              counter -= current_val;   
             }
             else
             {
+                //add the current value to the counter
                 counter+=current_val;
             }
+            //updating prev value
             prev_val = current_val;
         }
         return counter;
