@@ -15,10 +15,10 @@ class Solution
         ListNode node = head.next;
         ListNode current = head.next;
 
-        while(node!=null)
+        while(node!=null) // if its null we're outside of the list
         {
             int sum = 0;
-            while(node.val != 0 )
+            while(node.val != 0 ) // add the numbers aslong as theyre not 0
             {
                 sum += node.val;
                 node = node.next;
@@ -29,6 +29,6 @@ class Solution
             current = node;
 
         }
-        return head.next;
+        return head.next; // return the nodes that contains our combines nodes
     }
 }
