@@ -10,7 +10,7 @@ class Solution
             {
                 counter++;
             }
-            else if(operations[i].equals("X--")||operations[i].equals("--X"))
+            else
             {
                 counter--;
             }
